@@ -1,6 +1,7 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Project Link-> https://realtime-chat-app-mern.netlify.app/
 
 ## Available Scripts
 
