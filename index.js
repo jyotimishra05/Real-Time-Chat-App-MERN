@@ -4,6 +4,7 @@ const mongoose = require("mongoose");
 const authRoutes= require("./routes/userRoutes")
 const messagesRoute= require("./routes/messagesRoute")
 const socket = require("socket.io")
+const PORT =process.env.PORT ||5001;
 
 const app = express();
 require("dotenv").config();
@@ -22,7 +23,7 @@ mongoose.connect(process.env.MONGO_URL , {
     console.log(error.message)
 })
 
-const server=app.listen(process.env.PORT ,()=>{
+const server=app.listen(PORT ,()=>{
     console.log("server is running on port number 5001")
 })
 
